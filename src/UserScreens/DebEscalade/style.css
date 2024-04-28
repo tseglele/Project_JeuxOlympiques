@@ -1,0 +1,70 @@
+.deb-escalade{
+  width: 100%;
+  height: 100vh;
+  overflow-x : hidden;
+  background-color: mediumslateblue;
+}
+
+.content{
+  position: relative;
+  top:  80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .img-deb{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 400px;
+    height: 300px;
+    display: block;
+    -webkit-box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0); 
+    box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0);
+    border-radius: 8%;
+    background-color:#F9F9F9;
+    z-index:  1;
+
+  }
+  .img-deb p{
+   color: #000;
+   font-weight: 500;
+   font-size: large;
+   text-align: center;
+  }
+
+.overlay{
+  position: absolute;
+  top: 180px;
+  left: 45%;
+  width: 300px;
+  height: 200px;
+  border-radius: 8%; 
+  -webkit-box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0); 
+  box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(/public/images/imgz-index.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  z-index: 0;
+}
+.mountains{
+  position: fixed;
+  height: 300px;
+  background-image: url(/public/images/Monta-1\ 1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  bottom: 0 ;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.murEsc {
+  width: 600px;
+  height: 100%;
+  background-image: url(/public/images/murEsc.png);
+}
