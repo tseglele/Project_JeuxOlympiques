@@ -11,8 +11,8 @@ const LoginScreen = () => {
   const auth = AUTH;
   const navigate = useNavigate();
 
-  const handleNavigateHome = () => {
-    navigate('/home');
+  const handleNavigateParticipantForm = () => {
+    navigate('/admin/participantForm');
   };
   const handleSignIn = async () => {
    
@@ -23,7 +23,7 @@ const LoginScreen = () => {
       console.log(error);
       alert('Sign in error: ' + error.message);
     } finally {
-      handleNavigateHome()
+      handleNavigateParticipantForm()
     }
   };
  
@@ -36,7 +36,7 @@ const LoginScreen = () => {
       console.log(error);
       alert('Sign up error: ' + error.message);
     } finally {
-        handleNavigateHome()
+        handleNavigateParticipantForm()
     }
   };
 

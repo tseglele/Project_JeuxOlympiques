@@ -1,0 +1,21 @@
+.participant-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .participant-table th,
+  .participant-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .participant-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .participant-table td img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    height: auto;
+  }
+  

@@ -4,6 +4,7 @@ import { allAnime ,ruleAnime } from '../gsap/StartAnimation';
 import { useNavigate } from 'react-router-dom';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NavBar from '../../Components/NavBar';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,14 +16,19 @@ export default function Epreuve() {
   };
 
   useEffect(() => {
-    allAnime(".epreuve",".mountains")
+    allAnime(".page-content",".mountains")
   ruleAnime(".rules")
   }, []);
  
   return (
-    < >
+
       <div className='epreuve'>
+         <div className='header'>
+          <NavBar></NavBar>
         <h1>Epreuve</h1>
+        </div>
+        <div className='page-content'>
+       
         <section className="rules">
          <div className="rulesVitesse">
           <div className='prises'>
@@ -35,18 +41,18 @@ export default function Epreuve() {
          
          <div className="rulesDistance">
          <div className='prises'>
-          <div className=' prise one'  data-popover-content="Contenu du popover 1"></div>
-          <div  className=' prise two'  data-popover-content="Contenu du popover 2 "></div>
-          <div  className=' prise three ' data-popover-content="Contenu du popover 4"></div>
-          <div   className=' prise four'  data-popover-content="Contenu du popover 3"></div>
+          <div className=' prise one'  ></div>
+          <div  className=' prise two' ></div>
+          <div  className=' prise three '></div>
+          <div   className=' prise four'></div>
           </div>
          </div>
       </section>
- 
-       </div>
-       <div className="mountains">
+      </div>
+      <div className="mountains">
       <button onClick={handleNavigateParticipants}>Voir les participants</button>
        </div>
-      </>
+       </div>
+      
   )
 }

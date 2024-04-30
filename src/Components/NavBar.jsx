@@ -1,41 +1,40 @@
-import React, { useRef, useEffect } from 'react';
-import './styleNav.css'
+import React, { useEffect } from 'react';
+import './styleNav.css';
 
 function NavBar() {
-  const menuRef = useRef(null);
-  const menuBurgerRef = useRef(null);
-
   useEffect(() => {
+    const hamMenu = document.querySelector(".ham-menu");
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+
     const handleClick = () => {
-      const menuBg = menuRef.current;
-      const menuItems = menuRef.current.children[1];
-      const menuBurger = menuBurgerRef.current;
-
-      menuBg.classList.toggle('fs');
-      menuItems.classList.toggle('fs');
-      menuBurger.classList.toggle('fs');
-
-      const text = menuBurger.textContent;
-      if (text === '☰') {
-        menuBurger.textContent = '✕';
-      } else {
-        menuBurger.textContent = '☰';
-      }
+      hamMenu.classList.toggle("active");
+      offScreenMenu.classList.toggle("active");
     };
 
-    const menuBurger = menuBurgerRef.current;
-    menuBurger.addEventListener('click', handleClick);
+    hamMenu.addEventListener("click", handleClick);
 
     return () => {
-      menuBurger.removeEventListener('click', handleClick);
+      hamMenu.removeEventListener("click", handleClick);
     };
-  }, []);
+  }, []); // Empty dependency array ensures this effect runs only once after the initial render
 
   return (
-    <div className="menu-bg" ref={menuRef}>
-      <div className="menu-items" ref={menuRef}>
-        <div className="menu-burger" ref={menuBurgerRef}>☰</div>
+    <div  className="navbar">
+      <div className="off-screen-menu">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/epreuve">Epreuve</a></li>
+          <li><a href="/parcours">Parcours</a></li>
+        </ul>
       </div>
+
+      <nav>
+        <div className="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </div>
   );
 }
