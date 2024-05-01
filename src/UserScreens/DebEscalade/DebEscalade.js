@@ -53,7 +53,7 @@ export default function DebEscalade() {
        
          <div className='img-deb'> 
          <h2>Introduction à l'escalade</h2>
-         <p>Lorem ipsum dolor sit amet. Ut optio minus et aperiam repudiandae et fuga perferendis. Eum molestias dolor sed vero quibusdam cum necessitatibus nemo ut delectus quas non quibusdam sequi eum maiores adipisci qui quisquam nemo. </p>
+         <p>Il s'agit d'évoluer sur une surface verticale en utilisant ses pieds et ses mains pour progresser et atteindre le haut d'un mur artificiel, d'une falaise ou d'une paroi. Il existe 3 types d’épreuves au JO block/ difficulté et vitesse. </p>
         </div>
 
         <div className='overlay'>

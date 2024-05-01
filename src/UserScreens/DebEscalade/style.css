@@ -19,12 +19,12 @@
     position: absolute;
     top: 50%;
     left: 20%;
+    padding: 12px;
     width: 400px;
     height: 300px;
     display: block;
     -webkit-box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0); 
     box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0);
-    border-radius: 8%;
     background-color:#F9F9F9;
     z-index:  1;
 
@@ -42,7 +42,6 @@
   left: 45%;
   width: 300px;
   height: 200px;
-  border-radius: 8%; 
   -webkit-box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0); 
   box-shadow: 5px 5px 0px 0px #A4A1A1, -8px 4px 29px 12px rgba(164,161,161,0);
   background-color: rgba(0, 0, 0, 0.8);
@@ -73,4 +72,12 @@
   background-image: url(/public/images/murEsc.png);
   background-size:cover;
   z-index: 2;
+}
+
+
+media  only screen and (max-width: 768px) {
+  .murEsc{
+    display:none;
+  }
+
 }
