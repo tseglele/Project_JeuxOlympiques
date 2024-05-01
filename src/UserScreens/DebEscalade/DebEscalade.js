@@ -47,22 +47,25 @@ export default function DebEscalade() {
      <div className='mountains'>{/*la  div du bottom de deb-escalade */}
      <button onClick={actionButtons}>Suivant</button>
      </div>
-      <div  className="page-content">{/*  // Le content de la page qui a la première animation */}
+      <div  className="page-content">
+      <h1> L'Ascension vers la victoire</h1>
+        {/*  // Le content de la page qui a la première animation */}
+      <div className='murEsc'>
+          
+        </div>
         <div  className='content'>
-       
+      
        
          <div className='img-deb'> 
-         <h2>Introduction à l'escalade</h2>
-         <p>Il s'agit d'évoluer sur une surface verticale en utilisant ses pieds et ses mains pour progresser et atteindre le haut d'un mur artificiel, d'une falaise ou d'une paroi. Il existe 3 types d’épreuves au JO block/ difficulté et vitesse. </p>
+         <p>Introduction à l'escalade</p>
+         <p>Il s'agit d'évoluer sur une surface verticale en utilisant ses pieds et ses mains pour progresser et atteindre le haut d'un mur artificiel, d'une falaise ou d'une paroi. Il existe 3 types d’épreuves au JO <b>block/ difficulté et vitesse.</b> </p>
         </div>
 
         <div className='overlay'>
         </div>
 
         </div>
-        <div className='murEsc'>
-          
-        </div>
+        
      </div>
      
 </div>
