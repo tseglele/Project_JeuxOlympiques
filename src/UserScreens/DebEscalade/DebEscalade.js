@@ -47,12 +47,14 @@ export default function DebEscalade() {
      <div className='mountains'>{/*la  div du bottom de deb-escalade */}
      <button onClick={actionButtons}>Suivant</button>
      </div>
+     <div className='murEsc'>
+          
+          </div>
       <div  className="page-content">
+    
       <h1> L'Ascension vers la victoire</h1>
         {/*  // Le content de la page qui a la première animation */}
-      <div className='murEsc'>
-          
-        </div>
+    
         <div  className='content'>
       
        

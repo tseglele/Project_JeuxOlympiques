@@ -4,10 +4,13 @@
   overflow-x : hidden;
   overflow-y : hidden;
 }
-
+h1{
+  position: absolute;
+  top: 40px;
+}
 .content{
     position: relative;
-    top:  80px;
+    top:  30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,7 +68,6 @@
 
 .murEsc {
   position: absolute;
-  top: 0;
   right: 0;
   width: 70%;
   height: 100vh;
