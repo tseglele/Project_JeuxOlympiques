@@ -45,15 +45,23 @@ ul{
   text-align: center;
   font-size: 3rem;
   transition: .3s ease;
-  z-index: 1;
+  z-index: 3;
  
 }
 .off-screen-menu.active {
   right: 0;
 }
 
+.logo img{
+  width: 100px;
+  height: 50px;
+}
 
-
+.logo {
+  width: 100px;
+  height: 20px;
+  margin: 0;
+}
 /* nav */
 nav {
   padding: 1rem;
@@ -73,7 +81,7 @@ nav {
 .ham-menu span {
   height: 5px;
   width: 100%;
-  background-color: black;
+  background-color: grey;
   border-radius: 25px;
   position: absolute;
   left: 50%;
@@ -83,13 +91,15 @@ nav {
 }
 .ham-menu span:nth-child(1) {
   top: 25%;
+  width: 30px;
 }
 .ham-menu span:nth-child(3) {
   top: 75%;
+
 }
 .ham-menu.active span {
   background-color: white;
-  z-index: 2;
+  z-index: 3;
 }
 .ham-menu.active span:nth-child(1) {
   top: 50%;

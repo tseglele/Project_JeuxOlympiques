@@ -2,12 +2,12 @@
   width: 100%;
   height: 100vh;
   overflow-x : hidden;
-  background-color: mediumslateblue;
+  overflow-y : hidden;
 }
 
 .content{
-  position: relative;
-  top:  80px;
+    position: relative;
+    top:  80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,11 +60,17 @@
   background-repeat: no-repeat;
   bottom: 0 ;
   background-color: transparent;
-  z-index: 1;
+  z-index: 0;
 }
 
 .murEsc {
-  width: 600px;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 100vh;
+  background-repeat: no-repeat;
   background-image: url(/public/images/murEsc.png);
+  background-size:cover;
+  z-index: 2;
 }

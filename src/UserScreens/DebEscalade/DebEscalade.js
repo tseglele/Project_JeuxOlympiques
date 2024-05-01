@@ -42,13 +42,17 @@ export default function DebEscalade() {
  
   return (
  <div className="deb-escalade"> {/*// La div principale qui contient le tout la page-content et mountains */}
+
  <NavBar></NavBar>
+     <div className='mountains'>{/*la  div du bottom de deb-escalade */}
+     <button onClick={actionButtons}>Suivant</button>
+     </div>
       <div  className="page-content">{/*  // Le content de la page qui a la première animation */}
-      <h1>Introduction  de l'escalade</h1>
         <div  className='content'>
        
        
          <div className='img-deb'> 
+         <h2>Introduction à l'escalade</h2>
          <p>Lorem ipsum dolor sit amet. Ut optio minus et aperiam repudiandae et fuga perferendis. Eum molestias dolor sed vero quibusdam cum necessitatibus nemo ut delectus quas non quibusdam sequi eum maiores adipisci qui quisquam nemo. </p>
         </div>
 
@@ -60,9 +64,7 @@ export default function DebEscalade() {
           
         </div>
      </div>
-     <div className='mountains'>{/*la deuxième div de deb-escalade*/}
-     <button onClick={actionButtons}>Suivant</button>
-     </div>
+     
 </div>
   )
 }

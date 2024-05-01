@@ -16,10 +16,13 @@ function NavBar() {
     return () => {
       hamMenu.removeEventListener("click", handleClick);
     };
-  }, []); // Empty dependency array ensures this effect runs only once after the initial render
+  }, []); 
 
   return (
     <div  className="navbar">
+      <div className='logo'>
+<img src='/images/logo.png' alt="logo"></img>
+      </div>
       <div className="off-screen-menu">
         <ul>
           <li><a href="/">Home</a></li>
