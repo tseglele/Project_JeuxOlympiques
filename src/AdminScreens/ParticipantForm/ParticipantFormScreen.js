@@ -1,7 +1,7 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState } from 'react';
 import { db } from '../../firebaseConfig';
-import { collection,addDoc,updateDoc,doc} from 'firebase/firestore';
-import { useNavigate,useParams } from 'react-router-dom';
+import { collection,addDoc} from 'firebase/firestore';
+import { useNavigate} from 'react-router-dom';
 import './style.css';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
@@ -9,20 +9,7 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 const ParticipantFormScreen =()=>{
   const storage = getStorage();
   const navigate = useNavigate();
-  const {participant} = useParams() 
 
-  console.log(participant)
-
-  useEffect(() => {
-    if (participant) {
-      setParticipantName(participant.name || '');
-    /*   setBrefDesc(participant.bref_desc || '');
-      setParcoursOne(participant.parcours1 || { text: '', image: '' });
-      setParcoursTwo(participant.parcours2 || { text: '', image: '' });
-      setParcoursThree(participant.parcours3 || { text: '', image: '' });
-      setParcoursFour(participant.parcours4 || { text: '', image: '' }); */
-    }
-  }, []);
 
   const uploadImageToStorage = async (file) => {
     const storageRef = ref(storage, `participants/${file.name}`);
@@ -32,7 +19,7 @@ const ParticipantFormScreen =()=>{
 };
 // declaration des différentes constantes de notre formulaire
   
-    const[participantName,setParticipantName]=useState('');
+  const[participantName,setParticipantName]=useState('');
    const [brefDesc, setBrefDesc] = useState("");
    const[parcoursOne, setParcoursOne ]=useState({
     text: '',
@@ -88,39 +75,12 @@ const ParticipantFormScreen =()=>{
         console.error("Error adding participant:",e)
     }
    }
-//Modification d'un participant
-const updateParticipant = async (participant) => {
-  try {
-    const participantRef = doc(db, "participants", participant.id);
-    await updateDoc(participantRef, {
-      name: participantName,
-      bref_desc: brefDesc,
-      parcours1: parcoursOne,
-      parcours2: parcoursTwo,
-      parcours3: parcoursThree,
-      parcours4: parcoursFour,
-    });
-    console.log(`Participant ${participantName} updated successfully!`);
-  } catch (error) {
-    console.log(error);
-  }
-}
-  
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(e)
 
-  if (participant) {
-updateParticipant(); }
-    else {
-    addParticipant();
-}
-};
 
 return(
-    <>
+    <div className='divContainer'>
     <h1> Participant Form</h1>
-    <form  onSubmit={handleSubmit}>
+    <form  onSubmit={addParticipant}>
 
         Name:<br/>
         <input type="text" value={participantName} onChange={(e) =>setParticipantName(e.target.value)} /><br/>
@@ -149,9 +109,9 @@ return(
 
         <input type="file"  accept=".jpg,.jpeg,.png" onChange={async (e) => { setParcoursFour({ ...parcoursFour, image: await uploadImageToStorage(e.target.files[0]) }) }} /><br />
 
-<button type='submit' >Add Participant</button>
+<button type='submit' >Ajouter un Participant</button>
     </form>
-    </>
+    </div>
 )
 }
 

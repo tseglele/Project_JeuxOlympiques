@@ -36,10 +36,7 @@ const deleteParticipant = async(id)=>{
     alert("Le participant a été supprimé");
   }
 }
-//  Modifier les détails d'un participant
-const editParticipant = async (e, id) => {
-  navigate(`/admin/participantForm/${id}`);
-}
+
 //  Afficher les participants 
   const displayParticipants = () => {
     return participants.map((participant, key) => {
@@ -56,8 +53,6 @@ const editParticipant = async (e, id) => {
         <td>{participant.parcours4.text}</td>
         <td><img src={participant.parcours4.image} alt={participant.name} /></td>
         <td>
-         
-          <button className="editBtn" onClick={(e) => editParticipant(e, participant.id)}>Modifier</button>
           <button className='deleteBtn' onClick={()=> deleteParticipant(participant.id)} >Supprimer</button>
           </td>
       </tr>
@@ -70,13 +65,13 @@ const editParticipant = async (e, id) => {
 
   return (
     <div>
-      <h1>Liste des participants</h1>
+<h1>Liste des participants</h1>
 {/* Afficher la liste des participants */}
 <table className="participant-table">
         <thead>
           <tr>
             <th>Nom</th>
-            <th>Description brève</th>
+            <th>Brève Description</th>
             <th>Parcours 1</th>
             <th>Image Parcours 1</th>
             <th>Parcours 2</th>

@@ -1,0 +1,94 @@
+{
+    "prises": {
+      "Block/Difficulte": [
+        {
+          "content": "Contenu de la prise 1 du Block/Difficulte",
+          "backgroundImage": "images/priseD1.png",
+          "position": "absolute",
+          "top": "130px",
+          "left": "300px"
+        },
+        {
+          "content": "Contenu de la prise 2 du Block/Difficulte",
+          "backgroundImage": "images/priseD2.png",
+          "position": "absolute",
+          "top": "250px",
+          "left": "350px"
+        },
+        {
+          "content": "Contenu de la prise 3 du Block/Difficulte",
+          "backgroundImage": "images/priseD3.png",
+          "position": "absolute",
+          "top": "150px",
+          "left": "200px"
+        },
+        {
+          "content": "Contenu de la prise 4 du Block/Difficulte",
+          "backgroundImage": "images/priseD4.png",
+          "position": "absolute",
+          "top": "400px",
+          "left": "350px"
+        },
+        {
+          "content": "Contenu de la prise 5 du Block/Difficulte",
+          "backgroundImage": "images/priseD5.png",
+          "position": "absolute",
+          "top": "300px",
+          "left": "200px"
+        }
+      ],
+      "Vitesse": [
+       
+        {
+          "content": "Contenu de la prise 1 de Vitesse",
+          "backgroundImage": "images/priseV1.png",
+          "position": "absolute",
+          "top": "170px",
+          "left": "250px"
+        },
+        {
+          "content": "Contenu de la prise 2 de Vitesse",
+          "backgroundImage": "images/priseV2.png",
+          "position": "absolute",
+          "top": "250px",
+          "left": "250px"
+        },
+        {
+          "content": "Contenu de la prise 3 de Vitesse",
+          "backgroundImage": "images/priseV3.png",
+          "position": "absolute",
+          "top": "200px",
+          "left": "80px"
+        },
+        {
+          "content": "Contenu de la prise 4 de Vitesse",
+          "backgroundImage": "images/priseV4.png",
+          "position": "absolute",
+          "top": "300px",
+          "left": "100px"
+        },
+        {
+          "content": "Contenu de la prise 5 de Vitesse",
+          "backgroundImage": "images/priseV5.png",
+          "position": "absolute",
+          "top": "400px",
+          "left": "200px"
+        },
+        {
+            "content": "Contenu de la prise 6 de Vitesse",
+            "backgroundImage": "images/priseV6.png",
+            "position": "absolute",
+            "top": "430px",
+            "left": "100px"
+          },
+          {
+            "content": "Contenu de la prise 7 de Vitesse",
+            "backgroundImage": "images/priseV7.png",
+            "position": "absolute",
+            "top": "100px",
+            "left": "100px"
+          }
+      ]
+    }
+  }
+  

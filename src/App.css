@@ -1,3 +1,27 @@
 body{
     background-color: #96A1DD;
 }
+
+.buttons{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 4 ;
+  }
+  .prev{
+    width: 80px;
+    height: 80px;
+    background-image: url(/public/images/prev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .next{
+    width: 80px;
+    height: 80px;
+    background-image: url(/public/images/next.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
