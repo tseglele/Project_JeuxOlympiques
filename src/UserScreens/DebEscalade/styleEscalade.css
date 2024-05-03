@@ -56,7 +56,8 @@ h1{
   z-index: 0;
 }
 .mountains{
-  position: fixed;
+  position:absolute;
+  width: 100%;
   height: 300px;
   background-image: url(/public/images/Monta-1\ 1.png);
   background-size:cover;
@@ -66,7 +67,6 @@ h1{
   z-index: 0;
 }
 .buttons{
-  position: fixed;
   bottom: 20px;
   width: 100%;
   display: flex;
@@ -89,7 +89,7 @@ h1{
   background-size: contain;
 }
 .murEsc {
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 70%;
   height: 100vh;

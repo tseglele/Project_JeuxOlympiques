@@ -15,7 +15,7 @@ export const slideLeft =(target) =>{
 
 export const slideUp =(target)=>{
     gsap.fromTo(target,  
-      {y:'400'} , { y: '100', 
+      {y:'200'} , { y: '0', 
           duration: 1.5, 
           ease: "linear"}
        

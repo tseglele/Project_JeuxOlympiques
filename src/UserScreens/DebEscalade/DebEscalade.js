@@ -1,5 +1,5 @@
 import React , { useEffect } from 'react';
-import './style.css';
+import './styleEscalade.css';
 import { debEscalade } from '../gsap/StartAnimation';
 import { useNavigate} from 'react-router-dom';
 import { gsap } from "gsap";

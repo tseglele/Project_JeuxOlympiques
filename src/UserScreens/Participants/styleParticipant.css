@@ -1,0 +1,113 @@
+.participants{
+    width: 100%;
+    height: 100vh;
+    overflow-x : hidden;
+    overflow-y: hidden;
+  }
+
+  .mountains{
+    position: absolute;
+    height: 300px;
+    background-image: url(/public/images/Monta-1\ 1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+  }
+.page-content{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+  .colonnesParticipants{
+    position: relative;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    h1{
+      top:0px;
+      left: 40px;
+    }
+  }
+  .colonneDiff{
+    width: 40%;
+    height: 100vh;
+    position:absolute;
+    left:0;
+    background-image: url(/public/images/participantsDifficulte2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+  }
+
+  .colonneVit{
+    width: 40%;
+    height: 100vh;
+    position:absolute;
+    right:0;
+    background-image: url(/public/images/participantsVitesse.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+.participant{
+  position: relative;
+  bottom: 80%;
+}
+.participant h2{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 30%;
+  text-align: center;
+}
+.vitesse{
+position: absolute;
+ left: 300px;
+ img{
+  border-radius: 20%;
+  box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 8px 5px 0px #A4A1A1;
+  -moz-box-shadow: 7px 8px 5px 0px #A4A1A1;;
+ }
+}
+
+.difficulte{
+  position: absolute;
+
+  top:120px;
+ right: 120px;
+  img{
+    border-radius: 20%;
+    box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 8px 5px 0px #A4A1A1;
+    -moz-box-shadow: 7px 8px 5px 0px #A4A1A1;
+}
+}
+
+.description{
+  visibility: visible;
+  display: block;
+  width: 250px;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(40, 35, 35, 0.85);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(40, 35, 35, 0.53);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+
+.category {
+  font-weight: bold;
+}

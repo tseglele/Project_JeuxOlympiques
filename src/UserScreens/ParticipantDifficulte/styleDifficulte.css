@@ -1,0 +1,121 @@
+.participantVitesse{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+  .mountains{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-image: url(/public/images/Monta-1\ 1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    background-color: transparent;
+  }
+
+.nameCandidat{
+  background-image: url(/public/images/candidatDifficulte.png);
+  position: absolute;
+  width:100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 70px;
+  background-color: transparent;
+}
+
+.candidatImg{
+  position: fixed;
+  bottom: 45%;
+  left: 390px;
+  img{
+    border-radius: 20%;
+    box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 8px 5px 0px #A4A1A1;
+    -moz-box-shadow: 7px 8px 5px 0px #A4A1A1;;
+   }
+}
+
+.candidatMountains{
+  position: fixed;
+  width: 83%;
+  height: 100%;
+  background-image: url(/public/images/difficulté.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  top: 150px;
+  right: 0;
+  bottom: 0s;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.etapes{
+  z-index: 2;
+  position:relative ;
+}
+.etape1{
+  position:absolute;
+  top: 550px;
+  left: 15%
+}
+
+.etape2{
+  position:absolute;
+  top: 540px;
+  left: 45%
+}
+.etape3{
+  position:absolute;
+  top: 340px;
+  left: 70%
+}
+.etape4{
+  position:absolute;
+  top: 100px;
+  left: 85%
+}
+
+.parcours{
+  position: relative;
+  top: 70%;
+  left: 40%;
+  width: 500px;
+  height: 600px;
+  z-index: 3;
+  text-align: center;
+  border: 2px solid;
+  p{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 20%;
+  background-color: rgba(40, 35, 35, 0.85);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(40, 35, 35, 0.53);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  }
+  img{
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+   height: 200px;
+   object-position: center;
+    top: 30%;
+    left: 60%;
+    border-radius: 20%;
+    box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 8px 5px 0px #A4A1A1;
+    -moz-box-shadow: 7px 8px 5px 0px #A4A1A1;;
+   }
+}

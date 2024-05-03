@@ -3,6 +3,8 @@ import './styleNav.css';
 
 function NavBar() {
   useEffect(() => {
+   
+
     const hamMenu = document.querySelector(".ham-menu");
     const offScreenMenu = document.querySelector(".off-screen-menu");
 
@@ -26,8 +28,11 @@ function NavBar() {
       <div className="off-screen-menu">
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/introEscalade">Introduction</a></li>
           <li><a href="/epreuve">Epreuve</a></li>
-          <li><a href="/parcours">Parcours</a></li>
+          <li><a href="/participants">Participants</a></li>
+       <li><a href="/participantVitesse">Bessa Mawem</a></li>
+          <li><a href="/participantDifficulte">Oriane Bertone</a></li>
         </ul>
       </div>
 
