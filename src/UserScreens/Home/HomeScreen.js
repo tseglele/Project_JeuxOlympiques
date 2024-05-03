@@ -24,7 +24,7 @@ function HomeScreen() {
         .finally(() => {
           setLoading(false); // Arrêter le chargement après le délai et le chargement de la vidéo
         });
-    }, 3200);
+    }, 4500);
 
     // Nettoyer le timeout lors du démontage du composant
     return () => clearTimeout(timeout);

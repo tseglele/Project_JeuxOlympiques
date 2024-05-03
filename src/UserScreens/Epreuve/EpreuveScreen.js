@@ -81,6 +81,10 @@ export default function Epreuve() {
   const handleClickPriseV7 = () => {
     setShowPopoverV7(!showPopoverV7);
   };
+  useEffect(() => {
+    // Animation GSAP pour l'affichage des parcours
+    gsap.fromTo(".prise-content", { y: 300, opacity: 0 }, { y: 50, opacity: 1, duration: 0.8, stagger: 0.2 });
+  }, [showPopoverD1,showPopoverD2, showPopoverD3, showPopoverD4,showPopoverD5,showPopoverV1,showPopoverV2,showPopoverV3,showPopoverV4,showPopoverV5,showPopoverV6,showPopoverV7]);
   return (
     <div className='epreuve'>
       <div className='header'>
