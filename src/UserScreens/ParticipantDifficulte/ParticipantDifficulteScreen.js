@@ -14,7 +14,7 @@ export default function ParticipantDifficulteScreen() {
   const navigate = useNavigate();
 
   const Previous = () => {
-    navigate('/participants');
+    navigate('/participantVitesse');
   };
 
 

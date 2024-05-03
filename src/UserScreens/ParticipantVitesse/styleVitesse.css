@@ -20,7 +20,8 @@
 .nameCandidat{
   background-image: url(/public/images/candidatVitesse.png);
   position: absolute;
-  width: 100%;
+  right: 0;
+  width: 85%;
   height: 200px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,18 +43,17 @@
 
 .candidatMountains{
   position: fixed;
-  width: 83%;
+  width: 80%;
   height: 100%;
   background-image: url(/public/images/difficulte.png);
   background-size:contain;
   background-repeat: no-repeat;
-  top: 150px;
+  top: 80px;
   right: 0;
-  bottom: 0s;
+
   background-color: transparent;
   z-index: 1;
 }
-
 .etapes{
   z-index: 2;
   position:relative ;
@@ -66,7 +66,7 @@
 
 .etape2{
   position:absolute;
-  top: 540px;
+  top: 520px;
   left: 45%
 }
 .etape3{
@@ -88,7 +88,7 @@
   height: 600px;
   z-index: 3;
   text-align: center;
-  border: 2px solid;
+
   p{
   position: absolute;
   top: 20%;

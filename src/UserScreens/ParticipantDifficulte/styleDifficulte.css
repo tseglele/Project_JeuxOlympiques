@@ -5,7 +5,10 @@
   overflow-y: hidden;
 }
 
-
+.page-content{
+  width: 100%;
+  height: 100%;
+}
   .mountains{
     position: fixed;
     width: 100%;
@@ -21,7 +24,7 @@
   background-image: url(/public/images/candidatDifficulte.png);
   position: absolute;
   width:100%;
-  height: 300px;
+  height: 240px;
   background-repeat: no-repeat;
   background-size: contain;
   top: 70px;
@@ -42,17 +45,18 @@
 
 .candidatMountains{
   position: fixed;
-  width: 83%;
+  width: 70%;
   height: 100%;
   background-image: url(/public/images/difficulte.png);
   background-size:contain;
-  background-repeat: no-repeat;
-  top: 150px;
+  background-repeat: repeat-x;
+  top: 80px;
   right: 0;
-  bottom: 0s;
+
   background-color: transparent;
   z-index: 1;
 }
+
 
 .etapes{
   z-index: 2;
@@ -66,7 +70,7 @@
 
 .etape2{
   position:absolute;
-  top: 540px;
+  top: 520px;
   left: 45%
 }
 .etape3{
@@ -88,7 +92,6 @@
   height: 600px;
   z-index: 3;
   text-align: center;
-  border: 2px solid;
   p{
   position: absolute;
   top: 20%;

@@ -28,7 +28,6 @@ function NavBar() {
       <div className="off-screen-menu">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/introEscalade">Introduction</a></li>
           <li><a href="/epreuve">Epreuve</a></li>
           <li><a href="/participants">Participants</a></li>
        <li><a href="/participantVitesse">Bessa Mawem</a></li>
